@@ -1,0 +1,21 @@
+.text{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.anime{
+    display: inline-block; /* Needed to apply transform on inline elements */
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: moveText 10s linear infinite; /* 10s duration for the animation */
+    position: absolute;
+}
+@keyframes moveText {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  

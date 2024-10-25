@@ -1,0 +1,1003 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+   
+    <title>React App</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+  crossorigin="anonymous"
+/>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+   
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+     
+      /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      } */
+
+/* 
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      } */
+			.change{
+				display:flex;
+				flex-direction:row;
+				justify-content:center;
+			
+			}
+      header {
+        background: darkblue;
+        padding: 10px 20px;
+      }
+      .btn {
+        border-radius: 8px;
+        background-color: white;
+        width: 80px;
+        height: 30px;
+        color: blue;
+        margin-left: 6px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        color: #fff;
+        font-size: 1.5rem;
+      }
+
+  .nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 70vh; */
+        height: 49vh;
+        background-color:  #E3F8FF; 
+      
+      }
+			.con{
+				color:darkblue
+			}
+
+      .content-wrapper {
+        text-align: center;
+			
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+  
+      footer {
+        background: #333;
+        color: #fff;
+        padding: 20px 0;
+        position: relative;
+    width: 100%;
+					
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* max-width: 1200px; */
+       margin-left: 53px;
+       padding-bottom: 10px; 
+      }
+
+      .social-icons {
+        display: flex;
+      }
+
+      .nav-links .space {
+        margin-left: 120px;
+      }
+
+      .icon-facebook {
+        background-position: 0 0;
+      }
+
+      .icon-twitter {
+        background-position: -32px 0;
+      }
+
+      .icon-instagram {
+        background-position: -64px 0;
+      }
+			.breadcrumbs{
+				display:flex;
+				flex-direction:row;
+				gap:12px;
+				padding-left:40px;
+        font-size: 14px;
+				background-color:#E3F8FF;
+	
+			}
+			.middle{
+        position:relative;
+				background-color:#E3F8FF;
+        background-image: url('./bg-how-does-office365-mailbox-work.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;  
+        background-position: center; 
+			}
+      .centered-image{
+        margin-left: 53px;
+        position: relative;
+      }
+  .video {
+  position: absolute;
+  top: 50%; 
+  left:85%;
+  /* left: 50%;  */
+  transform: translate(-50%, -50%);
+  width: 50px; 
+  height: auto;
+  text-align: end;
+}   
+			@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        display: block;
+        text-align: center;
+    }
+    .nav-links li {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    .nav-links .space {
+        margin-left: 50px;
+      }
+
+    .total {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .free{
+	border-radius:8px;
+	background-color:red;
+	width:100px;
+	color:white;
+	padding:4px
+
+}
+.content {
+       
+        height: 80vh;
+      
+      }
+    .con{
+				font-size: 14px;
+				color:darkblue;
+        margin-top:-36px
+			}
+      .change{
+        margin-top: -30px;
+      }
+
+      .video{
+        display: none;
+      }
+      .fst-line, .second-line {
+        margin-top: 34px;
+      }
+}
+
+.change{
+	display:flex
+}
+
+.num{
+margin-left:10px;
+line-height: 1;
+color:darkblue;
+font-weight:600
+}
+.no{
+	margin-left:10px;
+font-size:30px;
+line-height: 1;
+color:darkblue;
+font-weight:600
+}
+
+.for{
+margin-left:10px
+}
+		
+.change p {
+    display: inline; 
+    margin: 0 5px; 
+}
+.free{
+	border-radius:12px;
+	background-color:red;
+	width:200px;
+	color:white;
+	padding:12px
+
+}
+
+.button-container {
+    display: flex; 
+    justify-content: center; 
+    margin: 20px;
+}
+
+.dual-button {
+    display: flex; 
+    border: none; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    cursor: pointer; 
+    width: 200px; 
+}
+
+.buy-now {
+    background-color:skyblue; 
+    color: white; 
+    flex: 1; 
+    padding: 12px;
+    text-align: center;
+}
+
+.percentage {
+    background-color: red; 
+    color: white; 
+    flex: 1; 
+    padding: 4px;
+    text-align: center; 
+}
+
+.off {
+    font-size: 0.8em; 
+}
+
+.total {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+/* .fst-line p{
+  font-size: 14px;
+}
+.second-line p{
+  font-size: 14px;
+}
+.fst-line {
+
+		display:flex;
+		flex-direction:row;
+		gap:14px;
+		justify-content:space-between;
+		color:darkblue;
+		
+		
+}
+.second-line {
+	display:flex;
+		flex-direction:row;
+		gap:14px;
+		justify-content:space-between;
+		color:darkblue;
+		
+}
+ */
+
+ .fst-line, .second-line {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    justify-content: space-between;
+    color: darkblue;
+}
+
+.fst-line p, .second-line p {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px; /* Space for the sprite image */
+    background-image: url('./otherlinks-sprite.png'); /* Your sprite image */
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 20px; /* Adjust based on the height of each icon */
+    width: auto;
+}
+
+.icon {
+    width: 20px; /* Ensure width for each icon */
+    height: 20px; /* Ensure height for each icon */
+}
+
+/* Background positions for each icon based on vertical sprite */
+.icon-first {
+    background-position: 0 0; /* First icon */
+}
+
+.icon-second {
+    background-position: 0 -40px; /* Second icon (move down by 20px) */
+}
+
+.icon-third {
+    background-position: 0 -100px; /* Third icon (move down by 40px) */
+}
+
+.icon-fourth {
+    background-position: 0 -60px; /* Fourth icon (move down by 60px) */
+}
+
+.icon-fifth {
+    background-position: 0 -170px; /* Fifth icon (move down by 80px) */
+}
+
+.icon-sixth {
+    background-position: 0 -40px; /* Sixth icon (move down by 100px) */
+}
+
+
+.middle-row {
+    display: flex;
+    flex-direction: row;
+    gap: 14px; /* Space between items */
+    justify-content: center;
+    font-size: 12px;
+    align-items: center; /* Align text vertically with icons */
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    padding-left: 25px; /* Space for the sprite image */
+    background-image: url('product-icon-sprites.png'); /* Your sprite image */
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    width:auto;
+    height: 20px; /* Height of each icon */
+    /* background-position: 0 0;  */
+}
+
+/* Background positions for each icon */
+.icon-overview {
+    background-position: 0 0; /* First icon at the top */
+}
+
+.icon-features {
+    background-position: 0 -35px; /* Second icon (move down 20px) */
+}
+
+.icon-how-it-works {
+    background-position: 0 -64px; /* Third icon (move down 40px) */
+}
+
+.icon-user-manual {
+    background-position: 0 -98px; /* Fourth icon (move down 60px) */
+}
+
+.icon-faq {
+    background-position: 0 -135px; /* Fifth icon (move down 80px) */
+}
+
+.icon-videos {
+    background-position: 0 -170px; /* Sixth icon (move down 100px) */
+}
+
+.icon-pricing {
+    background-position: 0 -203px; /* Seventh icon (move down 120px) */
+}
+
+.icon-screenshots {
+    background-position: 0 -240px; /* Eighth icon (move down 140px) */
+}
+
+.footer-row {
+            display: flex;
+					
+            justify-content: space-between; 
+            flex-wrap: wrap; 
+        }
+
+      
+        .footer-column {
+            color: white;
+            width: 10%;
+            margin-bottom: 20px; 
+            /* margin-left: 13px; */
+        }
+
+        .footer-column span {
+            display: block;
+            margin-bottom: 8px; 
+        }
+
+        .footer-column span[style*="opacity:0.5"] {
+            opacity: 0.5;
+        }
+
+				.middle-row {
+    background-color: white; 
+   
+    padding: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   font-size: 12px;
+    margin: 20px auto; 
+}
+.middle-row p{
+  font-size: 12px;
+}
+.ths {
+  background-image: url('/accelerate_img.jpg');
+    background-repeat: no-repeat;
+        background-size: cover;  
+        background-position: center; 
+   
+  }
+
+  .lorem-th {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+    margin-top: -14px;
+    padding: 40px;
+  }
+
+  .text-container {
+    color: darkblue;
+    text-align:center;
+    flex-grow: 1;
+   
+  }
+  .foot-end{
+    color:white;opacity:0.5;align-items: center;text-align: center;
+  }
+ 
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .video{
+        display: none;
+      }
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-links li {
+      margin: 10px 0;
+    }
+    .change{
+        margin-top: -30px;
+      }
+
+      .btn {
+      margin-top: 10px;
+    }
+    .footer-row {
+            display: inline;
+        }
+        .content {
+       
+       height: 95vh;
+       /* height: 57vh; */
+     
+     }
+     .fst-line, .second-line {
+        margin-top: 34px;
+      }
+   
+}
+
+@media (max-width: 768px) {
+    .responsive-img {
+      max-width: 50%; /* Scale down the image for medium screens */
+    }
+
+    .text-container {
+      font-size: 1rem; 
+      margin-right: 99px;
+    }
+    .video{
+        display: none;
+      }
+  }
+
+  @media (max-width: 397px) {
+    .responsive-img {
+      max-width: 40%; /* Further scale down the image for small screens */
+    }
+
+    .video{
+        display: none;
+      }
+    .text-container {
+      font-size: 0.9rem; 
+      margin-right: 99px;
+    }
+    .fst-line, .second-line {
+        margin-top: 34px;
+      }
+  }  
+
+  @media (max-width: 397px) {
+    header {
+      padding: 10px;
+    }
+
+    nav {
+      flex-direction: column;
+    }
+
+    .footer-row {
+            display: inline;      
+        }
+        .change{
+        margin-top: -30px;
+      }
+
+      .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .nav-links li {
+      margin: 8px 0;
+    }
+
+    .btn {
+      width: 100%;
+      height: 40px;
+    }
+    .con{
+				
+				color:darkblue;
+        margin-top:-36px;
+        font-size:14px
+			}
+
+      .free{
+	border-radius:8px;
+	background-color:red;
+	width:100px;
+	color:white;
+	padding:4px
+
+}
+.content {
+       
+       height: 95vh;
+       /* height: 57vh; */
+     
+     }
+    .lorem-th {
+      height: 150px; /* Reduce the height for smaller screens */
+    }
+    .quis{
+  margin-top: -50px;
+}
+.ante{
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+}
+
+ @media(max-width:667px){
+  content{
+    height: 60vh;
+  }
+ } 
+  
+
+@media (max-width: 768px) {
+  nav {
+          flex-direction: column;
+        }
+
+        .content{
+  height: 56vh;
+}
+        .nav-links {
+          margin-top: 10px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        .footer-content {
+          flex-direction: column;
+        }
+  .ths {
+    flex-direction: column;      
+    align-items: flex-start;     
+  }
+
+  .lorem-th {
+    width: 100%;               
+    height: 200px;             
+  }
+  .middle-row {
+    flex-direction: column;
+        margin-top: 15px;
+        white-space: nowrap;
+  }
+
+  .image-container {
+      width: 80px;  
+      height: 80px;
+  }
+
+  .middle-row p {
+      margin: 5px 0;  
+}
+
+
+.image-container {
+   width:100px;
+	 height:100px;
+	 
+  background-image: url('./accelerate_img.jpg');
+    background-size: cover;  
+
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .quis{
+  margin-top: -50px;
+}
+.ante{
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+}
+
+
+@media (max-width:397px){
+  .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       margin-left: 3px;
+      }
+      .footer{
+        background: #333;
+    color: #fff;
+    margin-left: -47px;
+    padding-right: 122px;
+      }
+      .foot-end{
+        margin-left: 18px;
+        padding-left: 25px;
+      }
+      .lorem-th {
+  background-image: url('./accelerate_img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+  padding-right: 20px; 
+}
+.ante{
+  font-size: 14px;
+  margin-left: 10px;
+}
+.column{
+  font-size: 14px;
+}
+.dark{
+font-size: 14px;
+}
+.ante-metus{
+ font-size:14px;
+}
+.quis{
+  margin-top: -50px;
+}
+
+}
+
+@media(max-width:914px){
+  .content{
+    height: 50vh;
+  }
+}
+
+.dark{
+  color:black;font-weight:600;font-size:16px
+}
+.ante-metus{
+  color:darkblue;font-size:16px;font-weight:600
+}
+
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Responsive Flexbox Layout with CSS Sprites</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">LOGO HERE</a></li>
+          <li><a href="#">Reseller</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Video Tutorials</a></li>
+          <li><a href="#">Free Tools</a></li>
+          <li><a href="#">FAQ</a></li>
+
+          <li class="space"><a href="#">Knowledge Base</a></li>
+          <li><a> Pricing</a></li>
+          <li><a> Download</a></li>
+          <li><a>Support</a></li>
+          <button class="btn">Sign In ></button>
+        </ul>
+      </nav>
+    </header>
+
+
+<div class="breadcrumbs">
+<div>Home ></div>
+<div>Lorem Ipsum Tool</div>
+</div>
+
+   
+    <section class="content">
+			
+      <div class="content-wrapper">
+        <h2 class="con">eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
+				<img src="video-play-icon.png" alt="Video Play Icon" class="video-icon" /><br/><br/>
+			
+				<div class="change">
+<p class="just">Just</p><p class="num" style='font-size:30px'>$200</p><p class="for">For</p><p class="no">100</p><p class="mail">Mailboxes</p>
+
+				</div>
+				<div class="total">
+<button class="free">Free Download</button>
+<div class="button-container">
+	<button class="dual-button">
+			<span class="buy-now">Buy Now</span>
+			<span class="percentage">
+				75% <br /> 
+				<span class="off">off</span>
+		</span>
+	</button>
+</div>
+
+				</div>
+			
+				<!-- <div class="fst-line">
+					<p>Scelerisque eleifend</p>
+				
+			
+			   <p>Mattis nunc sed blandit</p>
+					
+					
+						<p>Mattis nunc sed blandit</p>
+					
+					</div>
+					<div class="second-line">
+						<p>Felis eget nunc lobortis</p>
+						<p>Felis eget nunc lobortis</p>
+						<p>Felis eget nunc lobortis</p>
+					</div>
+				 -->
+
+         <div class="fst-line">
+          <p class="icon icon-first">Scelerisque eleifend</p>
+          <p class="icon icon-second">Mattis nunc sed blandit</p>
+          <p class="icon icon-third">Mattis nunc sed blandit</p>
+      </div>
+      
+      <div class="second-line">
+          <p class="icon icon-fourth">Felis eget nunc lobortis</p>
+          <p class="icon icon-fifth">Felis eget nunc lobortis</p>
+          <p class="icon icon-sixth">Felis eget nunc lobortis</p>
+      </div>
+      
+			</div>
+			
+    </section>
+<!-- <div class="middle-row">
+ 
+
+	<p>Overview</p>
+	<p>Features</p>
+	<p>How it works</p>
+	<p>User Manual</p>
+	<p>FAQ</p>
+	<p>Videos</p>
+	<p>Pricing</p>
+	<p>Screenshots</p>
+</div> -->
+
+<div class="middle-row">
+  <p class="icon icon-overview">Overview</p>
+  <p class="icon icon-features">Features</p>
+  <p class="icon icon-how-it-works">How it works</p>
+  <p class="icon icon-user-manual">User Manual</p>
+  <p class="icon icon-faq">FAQ</p>
+  <p class="icon icon-videos">Videos</p>
+  <p class="icon icon-pricing">Pricing</p>
+  <p class="icon icon-screenshots">Screenshots</p>
+</div>
+<div class="ths">
+  <div class="lorem-th">
+    <!-- <img src="./accelerate_img.jpg" alt="Accelerate Image" class="responsive-img"/> -->
+    <div class="text-container">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br/>
+      dolore magna aliqua - <span style="color:blue">Now 10X Faster!</span>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="ante" style="display:flex;flex-direction:row;justify-content:space-evenly">
+	<div class="column">
+    <p style="color:blue;font-size: 14px;">dolore magna aliqua dolore magna aliqua!</p><br/>
+		<p class="ante-metus">Ante metus dictum at tempor commodo<br/>
+		ullamcorper</p>
+		<span>Lorem ipsum sit amet,consectetur adipiscing elit,sed do wiysmod tempor<br/>
+		incididunt ut labore et dolore magna aliqua.Nibh mauris cursus mattis molestie a<br/>
+	iaculis at erat pellentesque.Amet mauris commodo quis imperdiet massa tincidunt.<br/>
+Quisque egestas diam in ancu curs euismod</span><br/><br/><br/>
+
+<span>Tincidunt id aliquet risus feugiat in ante metus.Dui accumsan sit amet nulla facillisi<br/>
+morbi.Nisl nisi scelerisque eu ultrices vitae auctor eu augue.Ut placerat orci nulla<br/>
+pellentesque.Diam vel quam elementum pulvinar etiam non quam.Odio ut sem<br/>
+nulla pharetra diam.Tortor condimentum lacinia quis vel.<br/><br/><br/></span>
+
+
+<span>Tincidunt id aliquet risus feugiat in ante metus.Dui accumsan sit amet nulla facilisi<br/>
+morbi.Nisl nisi scelerisque eu ultrices vitae auctor eu augue.Ut placerat orci nulla<br/>
+pellentesque.Diam vel quam elementum pulvinar etiam non quam.Odio ut sem<br/>
+nulla pharetra diam.Tortor condimentum lacinia quis vel.<br/><br/></span>
+
+
+	</div>
+	<div class="column">
+		<p class="dark" >Ante metus dictum at tempor commodo ullamcorper</p>
+		<span>Tincidunt id aliquet risus feugigat in ante metus.Dui accumsan nulla facilisi<br/>
+		morbi.Nisl nisi scelerisque eu ultrices vitae auctor eu augue.Ut placerat orci nulla<br/>
+	pellentesque.Diam vel quam elementum puvonar eitam non quam.Odio ut sem<br/>
+nulla pharetra diam.Tortor condimentum lacinia quis vel.<br/><br/>
+</span>
+<p class="dark" >Ante metus dictum at tempor commodo ullamcorper</p>
+<span>Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor<br/>
+incididunt ut labore et dolore magna aliqua.Nibh mauris cursus mattis molestie a<br/>
+iaculis at erat pellentesque.Amet mauris commodo quis imperdiet massa tincidunt.<br/>
+Quisque egestas diam in arcu cursus euismod.<br/><br/><br/>
+</span>
+<p class="dark" >Ante metus dictuum at tempor commodo ullamcorper</p>
+<span>Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor<br/>
+incididunt ut labore et dolore magna aliqua.Nibh muris cursus mattis molestie a<br/>
+iaculis at erat pellentesque.Amet mauris commodo quis imperdiet massa tincidunt.<br/>Quisque egestas diam in arcu cursus wuismod.</span>
+	</div>
+</div><br/>
+<div class="middle">
+  <div class="centered-image"><br/>
+    <img src="video-play-icon.png" alt="Video Play Icon" class="video" /><br/><br/>
+	<p class="quis" style="font-size:15px;font-weight:600;color:darkblue">Quisque egesras diam in arcu cursus euismod</p><br/>
+	<p style="font-size:13px;font-weight:600">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p><br/>
+	<p style="font-size: 12px;">1. Lorem ipsum dolor sit amet,consectetur adipiscing elit</p>
+	<p style="font-size: 12px;">2. Tincidunt id aliquet risus feugiat in ante metus</p>
+	<p style="font-size: 12px;">3. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum</p>
+	<p style="font-size: 12px;">4. Eget nullam non nisi est sit amet</p><br/>
+	<button style="border-radius:12px;background-color:darkblue;color:white;width:150px;padding:12px;margin-left:12px;margin-bottom:10px">Try For Free!</button>
+</div>
+</div>
+   
+    <footer>
+			<div class="footer-content">
+        <div class="footer-row">
+            <div class="footer-column">
+                <span style="white-space: nowrap;">Lorem Ipsum</span>
+                <span style="opacity:0.5">Home</span>
+                <span style="opacity:0.5">Features</span>
+                <span style="opacity:0.5">Pricing</span>
+                <span style="opacity:0.5">Support</span>
+                <span style="opacity:0.5">Download</span>
+                <span style="opacity:0.5">Sitemap</span>
+            </div>
+
+            <div class="footer-column">
+                <span>Support</span>
+                <span style="opacity:0.5">FAQ</span>
+                <span style="opacity:0.5;white-space: nowrap;">Video Tutorials</span>
+                <span style="opacity: 0.5; white-space: nowrap;">Technical Support</span>
+
+                <span style="opacity:0.5;white-space: nowrap;">Live Chat</span>
+                <span style="opacity:0.5;white-space: nowrap;">Contact Us</span>
+            </div>
+
+            <div class="footer-column">
+                <span>Company</span>
+                <span style="opacity:0.5;white-space: nowrap;">Company Inc</span>
+                <span style="opacity:0.5;white-space: nowrap;">Rehoboth Beach DE</span>
+                <span style="opacity:0.5;white-space: nowrap;">United States</span>
+                <span style="opacity:0.5;white-space: nowrap;">+1(302)416-3056</span>
+            </div>
+        </div>
+    </div>
+<div style="border-bottom:1px solid white;opacity:0.5">
+</div>
+<p class="foot-end">Privacy Policy | Terms of Use | GDPR | Security | Press Releases</p>
+    </footer>
+  </body>
+</html>
+
